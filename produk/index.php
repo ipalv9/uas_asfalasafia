@@ -29,6 +29,7 @@
                         <th scope="col">Harga</th>
                         <th scope="col">Kategori</th>
                         <th scope="col">gambar</th>
+                        <th scope="col">action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,6 +60,7 @@
                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_produk']?>">
                             <i class="fa-solid fa-trash"></i>
                             </button>
+                            
 
                             <!-- Modal -->
                             <div class="modal fade" id="hapus<?=$data['id_produk']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -68,6 +70,9 @@
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Peringatan</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                <div class ="modal-body">
+                                    <img width="200" src="foto/<?=$data['gambar_produk']?>"alt="">
+                                </div>    
                                 <div class="modal-body">
                                     Yakin data <b><?=$data['harga']?></b> ingin dihapus?
                                 </div>
@@ -76,6 +81,7 @@
                                     <a href="hapus.php?xyz=<?=$data['id_produk']?>" class="btn btn-danger">Hapus</a>
                                 </div>
                                 </div>
+
                             </div>
                             </div>
                         </td>

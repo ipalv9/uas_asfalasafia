@@ -3,10 +3,10 @@
 include("../koneksi.php");
 
 #2. ambil id yang akan disunting
-$id = $_GET['nama_kategori'];
+$id = $_GET['id'];
 
 #3. mengambil semua record data berdasarkan id yang dipilih
-$ambil = "SELECT * FROM tabel_kategori WHERE nama_kategori='$id'";
+$ambil = "SELECT * FROM tabel_kategori WHERE id_kategori='$id'";
 
 #4. menjalankan query
 $edit = mysqli_query($koneksi,$ambil);

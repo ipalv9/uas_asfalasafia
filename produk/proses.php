@@ -18,7 +18,7 @@ $simpan = "INSERT INTO tabel_produk (nama_produk,harga,kategori_id,gambar_produk
 #4. jalankan query
 $proses = mysqli_query($koneksi, $simpan);
 
-$upload_foto = move_uploaded_file($tmp_foto,"foto/$nama_foto");
+$upload_foto = move_uploaded_file($tmp_foto,"gambar_produk/$nama_foto");
 
 #5. mengalihkan halaman
 // header("location:index.php");

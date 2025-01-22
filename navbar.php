@@ -16,7 +16,7 @@
           <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/kategori/index.php">Data kategori</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/kategori/index.php">data kategori</a>
+          <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/kategori/index.php"></a>
         </li>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
