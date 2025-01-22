@@ -69,9 +69,6 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img width="200" src="foto/<?=$data['gambar_produk']?>" alt="">
-                                    <table class="table">
-                                <div class="modal-body">
                                     Yakin data <b><?=$data['harga']?></b> ingin dihapus?
                                 </div>
                                 <div class="modal-footer">

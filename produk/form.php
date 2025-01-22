@@ -34,8 +34,8 @@
                     <label for="exampleInputEmail" class="form-label">Kategori</label>
                     <select name="kategori_id" class="form-control" id="">
                         <option value="">-Pilih Kategori-</option>
-                        <option value="Full Time">Makanan</option>
-                        <option value="Part Time">Minuman</option>
+                        <option value="Makanan">Makanan</option>
+                        <option value="Minuman">Minuman</option>
                     </select>
                 </div>
                 <div class="mb-3">

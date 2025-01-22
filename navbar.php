@@ -13,10 +13,10 @@
           <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/produk/index.php">Data Produk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/jurusan/index.php">Data kategori</a>
+          <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/kategori/index.php">Data kategori</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/dosen/index.php">Data Dosen</a>
+          <a class="nav-link active" aria-current="page" href="/ipal/uas_asfalasafia/kategori/index.php">data kategori</a>
         </li>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
