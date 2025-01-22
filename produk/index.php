@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Dosen</title>
+    <title>Data Produk</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/all.css">
 </head>
@@ -17,7 +17,7 @@
         <div class="col-12 m-auto">
             <div class="card">
             <div class="card-header">
-                <h3 class="float-start">Data Dosen</h3>
+                <h3 class="float-start">Data Produk</h3>
                 <span class="float-end"><a class="btn btn-primary" href="form.php"><i class="fa-solid fa-square-plus"></i> Tambah Data</a></span>
             </div>
             <div class="card-body">
@@ -25,12 +25,10 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">NIDN</th>
-                        <th scope="col">Nama Dosen</th>
-                        <th scope="col">Jabatan</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">No Handphone</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">nama Produk</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Kategori</th>
+                        <th scope="col">gambar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,7 +37,7 @@
                     include("../koneksi.php");
 
                     #2. menulis query
-                    $tampil = "SELECT * FROM dosens";
+                    $tampil = "SELECT * FROM tabel_produk";
 
                     #3. jalankan query
                     $proses = mysqli_query($koneksi, $tampil);
@@ -50,20 +48,20 @@
                     ?>
                     <tr>
                         <th scope="row"><?=$nomor++?></th>
-                        <td><?=$data['nidn']?></td>
-                        <td><?=$data['nama']?></td>
-                        <td><?=$data['jabatan']?></td>
-                        <td><?=$data['email']?></td>
-                        <td><?=$data['no_hp']?></td>
+                        <td><?=$data['nama_produk']?></td>
+                        <td><?=$data['harga']?></td>
+                        <td><?=$data['kategori_id']?></td>
+                        <td><?=$data['gambar_produk']?></td>
+
                         <td>
-                            <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id']?>"><i class="fa fa-pen-to-square"></i></a>
+                            <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_produk']?>"><i class="fa fa-pen-to-square"></i></a>
                             
-                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id']?>">
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_produk']?>">
                             <i class="fa-solid fa-trash"></i>
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="hapus<?=$data['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="hapus<?=$data['id_produk']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -71,11 +69,14 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Yakin data <b><?=$data['nama ']?></b> ingin dihapus?
+                                    <img width="200" src="foto/<?=$data['gambar_produk']?>" alt="">
+                                    <table class="table">
+                                <div class="modal-body">
+                                    Yakin data <b><?=$data['harga']?></b> ingin dihapus?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                    <a href="hapus.php?xyz=<?=$data['id']?>" class="btn btn-danger">Hapus</a>
+                                    <a href="hapus.php?xyz=<?=$data['id_produk']?>" class="btn btn-danger">Hapus</a>
                                 </div>
                                 </div>
                             </div>
