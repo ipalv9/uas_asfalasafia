@@ -56,10 +56,11 @@
 
                         <td>
                             <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_produk']?>"><i class="fa fa-pen-to-square"></i></a>
-                            
+
                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_produk']?>">
                             <i class="fa-solid fa-trash"></i>
                             </button>
+                            
                             
 
                             <!-- Modal -->
@@ -71,8 +72,9 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class ="modal-body">
-                                    <img width="200" src="foto/<?=$data['gambar_produk']?>"alt="">
-                                </div>    
+                                    <img width="200" src="gambar_produk/<?=$data['gambar_produk']?>"alt="">
+                                </div>
+
                                 <div class="modal-body">
                                     Yakin data <b><?=$data['harga']?></b> ingin dihapus?
                                 </div>
