@@ -42,7 +42,7 @@ $data = mysqli_fetch_array($edit)
                 <input type="hidden" name="id" value="<?=$data['id_kategori']?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nama Kategori</label>
-                    <input type="text" readonly value="<?=$data['nama_kategori']?>" name="nama_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text"  value="<?=$data['nama_kategori']?>" name="nama_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                
                 <button type="submit" class="btn btn-primary">Update</button>
